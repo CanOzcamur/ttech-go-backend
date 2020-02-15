@@ -68,11 +68,13 @@ public class SubscriberController {
 		ServiceResponse response = new ServiceResponse();
 
 		if (InputValidator.basketValidation(basket)) {
+			System.out.println("valid");
 			response.setReturnCode(AppConstants.RETURN_CODE_SUCCESS);
 			response.setReturnMsg(null);
 
 			printBasket(basket);
 		} else {
+			System.out.println("not valid");
 			response.setReturnMsg(AppConstants.RETURN_MSG_ERROR_INVALID_BASKET);
 		}
 

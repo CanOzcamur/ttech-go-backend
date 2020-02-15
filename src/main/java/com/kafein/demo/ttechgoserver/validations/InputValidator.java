@@ -20,14 +20,17 @@ public class InputValidator {
 	public static boolean basketValidation(Basket basket) {
 		
 		if (basket == null) {
+			System.out.println("null");
 			return false;
 		}
 		
 		if (basket.getSubscriber() == null || basket.getSubscriber().getId() == 0) {
+			System.out.println("getId");
 			return false;			
 		}
 		
 		if (basket.getPackages() == null || basket.getPackages().size() == 0) {
+			System.out.println("size");
 			return false;
 		}
 		
