@@ -4,7 +4,7 @@ This project was generated with Spring.
 
 ## Functionality overview
 
-It uses a custom API for all requests, including authentication.
+It uses a custom API for all requests.
 
 **General functionality:**
 
@@ -16,9 +16,13 @@ It uses a custom API for all requests, including authentication.
 - Total price display
 - Display transaction result
 
-**How to compile project: mvn package**
+**First you need to build backend side with 'ng build' then move dist folder to 'resources/static' folder**
 
-**How to run project: java -jar ttech-go.jar**
+How to compile project: **mvn package**
+
+How to run project: **java -jar ttech-go.jar**
+
+Reach the pages: **http://localhost:8080**
 
 **The general page breakdown looks like this:**
 
