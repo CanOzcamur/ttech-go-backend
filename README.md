@@ -34,7 +34,7 @@ Further Unit Test Run Configuration Read: **Unit Test Run Configuration.docx **
 
 Further Technical Document Read: **TTech-Go TTD.docx**
 
-Detailed video: **video.mov** 
+Detailed video: **TtechGo - Google Chrome 17.02.2020 16_21_57** 
 
 - Home page (URL: /user )
     - Search of user 
