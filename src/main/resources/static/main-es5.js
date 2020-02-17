@@ -171,7 +171,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container\" style=\" margin-top: 20px;\">\n    <mdb-carousel [isControls]=\"false\" class=\"carousel-multi-item multi-animation\" [type]=\"'carousel-multi-item'\"\n    [animation]=\"'slide'\">\n    <mdb-carousel-item *ngFor=\"let item of slides; let i = index\">\n      <div class=\"col-md-4\" [ngClass]=\"{'d-none d-md-block': cardIndex !== 0}\" *ngFor=\"let card of item; let cardIndex = index\">\n                    <mdb-card class=\"my-1 cevir\">\n                        <div class=\"content\">\n                                <div class=\"front\">\n                                        <div style=\"min-height: 46%;\">\n                                                <mdb-card-img  [src]=\"card.img\" alt=\"Card image cap\"></mdb-card-img>\n                                        </div>\n                                        <div style=\"padding:10px;\">\n                                                       <mdb-card-body>\n                                                        <mdb-card-title>\n                                                            <h4>{{card.name}}</h4>\n                                                        </mdb-card-title>\n                                                        <p>{{card.description}}</p>\n                                                        </mdb-card-body>\n                                        </div>\n                                       \n                                </div>\n                                <div class=\"back\">\n                                        <div class=\"container\">\n                                                <div class=\"row  pieceInfo\">\n                                                        <div style=\"margin: 0 auto;padding-bottom: 5px;\">\n                                                                \n                                                                        {{card.amount}} TL/Ay\n                                                      \n                                                        </div>\n                                               \n                                                </div>\n\n                                                <div class=\"row justify-content-center \">\n                                                        <div class=\"col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6\">\n                                                               \n                                                                <button (click)=\"addToCheckout(card)\" id=\"checkoutIt\" style=\"width: 100%; height: 30px;\" name=\"checkout\" class=\"btn btn-info btn-sm\"><i class=\"fas fa-shopping-cart\" ></i></button>\n                                                        </div>\n                                               \n                                                </div>\n\n                                        </div>\n                                        \n                              \n                                                        \n                                </div>\n                          </div>\n                   </mdb-card>\n      </div>\n    </mdb-carousel-item>\n  </mdb-carousel> \n</div>\n\n";
+    __webpack_exports__["default"] = "<div class=\"container\" style=\" margin-top: 20px;\">\n        <mdb-carousel [isControls]=\"false\" class=\"carousel-multi-item multi-animation\" [type]=\"'carousel-multi-item'\"\n                [animation]=\"'slide'\">\n                <mdb-carousel-item *ngFor=\"let item of slides; let i = index\">\n                        <div class=\"col-md-4\" [ngClass]=\"{'d-none d-md-block': cardIndex !== 0}\"\n                                *ngFor=\"let card of item; let cardIndex = index\">\n                                <mdb-card class=\"my-1 cevir\">\n                                        <div class=\"content\">\n                                                <div class=\"front\">\n                                                        <div style=\"min-height: 46%;\">\n                                                                <mdb-card-img [src]=\"card.img\" alt=\"Card image cap\">\n                                                                </mdb-card-img>\n                                                        </div>\n                                                        <div style=\"padding:10px;\">\n                                                                <mdb-card-body>\n                                                                        <mdb-card-title>\n                                                                                <h4>{{card.name}}</h4>\n                                                                        </mdb-card-title>\n                                                                        <p>{{card.description}}</p>\n                                                                </mdb-card-body>\n                                                        </div>\n\n                                                </div>\n                                                <div class=\"back\">\n                                                        <div class=\"container\">\n                                                                <div class=\"row  pieceInfo\">\n                                                                        <div\n                                                                                style=\"margin: 0 auto;padding-bottom: 5px;\">\n\n                                                                                {{card.amount}} TL/Ay\n\n                                                                        </div>\n\n                                                                </div>\n\n                                                                <div class=\"row justify-content-center \">\n                                                                        <div\n                                                                                class=\"col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6\">\n\n                                                                                <button (click)=\"addToCheckout(card)\"\n                                                                                        id=\"{{card.name}}\"\n                                                                                        style=\"width: 100%; height: 30px;\"\n                                                                                        name=\"checkout\"\n                                                                                        class=\"btn btn-info btn-sm\"><i\n                                                                                                class=\"fas fa-shopping-cart\"></i></button>\n                                                                        </div>\n\n                                                                </div>\n\n                                                        </div>\n\n\n\n                                                </div>\n                                        </div>\n                                </mdb-card>\n                        </div>\n                </mdb-carousel-item>\n        </mdb-carousel>\n</div>";
     /***/
   },
 
@@ -1035,9 +1035,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _data_checkout_data_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
-    /*! ./data/checkout-data.service */
-    "./src/app/data/checkout-data.service.ts");
+    var _app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ../app/services/checkout-data.service */
+    "./src/app/services/checkout-data.service.ts");
     /* harmony import */
 
 
@@ -1083,11 +1083,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _pages_user_page_user_page_component__WEBPACK_IMPORTED_MODULE_6__["UserPageComponent"], _pages_package_page_package_page_component__WEBPACK_IMPORTED_MODULE_7__["PackagePageComponent"], _pages_checkout_page_checkout_page_component__WEBPACK_IMPORTED_MODULE_8__["CheckoutPageComponent"], _pages_page_not_found_page_page_not_found_page_component__WEBPACK_IMPORTED_MODULE_9__["PageNotFoundPageComponent"], _pages_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_10__["NavbarComponent"], _components_package_card_package_card_component__WEBPACK_IMPORTED_MODULE_12__["PackageCardComponent"], _components_cart_item_cart_item_component__WEBPACK_IMPORTED_MODULE_13__["CartItemComponent"], _components_total_chart_price_total_chart_price_component__WEBPACK_IMPORTED_MODULE_14__["TotalChartPriceComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_15__["NgbModule"], angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_16__["MDBBootstrapModule"]],
-      providers: [_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_11__["CheckoutDataService"], {
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_15__["NgbModule"], angular_bootstrap_md__WEBPACK_IMPORTED_MODULE_16__["MDBBootstrapModule"].forRoot()],
+      providers: [_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_11__["CheckoutDataService"], {
         provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__["APP_INITIALIZER"],
         useFactory: setupLocalStorageFactory,
-        deps: [_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_11__["CheckoutDataService"]],
+        deps: [_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_11__["CheckoutDataService"]],
         multi: true
       }],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
@@ -1149,9 +1149,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var src_app_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! src/app/data/checkout-data.service */
-    "./src/app/data/checkout-data.service.ts");
+    var src_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/services/checkout-data.service */
+    "./src/app/services/checkout-data.service.ts");
 
     var CartItemComponent =
     /*#__PURE__*/
@@ -1189,7 +1189,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     CartItemComponent.ctorParameters = function () {
       return [{
-        type: src_app_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__["CheckoutDataService"]
+        type: src_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__["CheckoutDataService"]
       }];
     };
 
@@ -1339,21 +1339,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var src_app_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! src/app/data/checkout-data.service */
-    "./src/app/data/checkout-data.service.ts");
+    var src_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/services/checkout-data.service */
+    "./src/app/services/checkout-data.service.ts");
     /* harmony import */
 
 
-    var src_app_pages_package_page_package_page_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! src/app/pages/package-page/package-page.service */
-    "./src/app/pages/package-page/package-page.service.ts");
+    var src_app_services_package_page_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/services/package-page.service */
+    "./src/app/services/package-page.service.ts");
     /* harmony import */
 
 
-    var _total_chart_price_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! ./total-chart-price.service */
-    "./src/app/components/total-chart-price/total-chart-price.service.ts");
+    var _services_total_chart_price_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../../services/total-chart-price.service */
+    "./src/app/services/total-chart-price.service.ts");
     /* harmony import */
 
 
@@ -1486,11 +1486,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     TotalChartPriceComponent.ctorParameters = function () {
       return [{
-        type: src_app_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__["CheckoutDataService"]
+        type: src_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__["CheckoutDataService"]
       }, {
-        type: src_app_pages_package_page_package_page_service__WEBPACK_IMPORTED_MODULE_3__["PackagePageService"]
+        type: src_app_services_package_page_service__WEBPACK_IMPORTED_MODULE_3__["PackagePageService"]
       }, {
-        type: _total_chart_price_service__WEBPACK_IMPORTED_MODULE_4__["TotalChartPriceService"]
+        type: _services_total_chart_price_service__WEBPACK_IMPORTED_MODULE_4__["TotalChartPriceService"]
       }, {
         type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModal"]
       }];
@@ -1505,153 +1505,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./total-chart-price.component.css */
       "./src/app/components/total-chart-price/total-chart-price.component.css")).default]
     })], TotalChartPriceComponent);
-    /***/
-  },
-
-  /***/
-  "./src/app/components/total-chart-price/total-chart-price.service.ts":
-  /*!***************************************************************************!*\
-    !*** ./src/app/components/total-chart-price/total-chart-price.service.ts ***!
-    \***************************************************************************/
-
-  /*! exports provided: TotalChartPriceService */
-
-  /***/
-  function srcAppComponentsTotalChartPriceTotalChartPriceServiceTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "TotalChartPriceService", function () {
-      return TotalChartPriceService;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/common/http */
-    "./node_modules/@angular/common/fesm2015/http.js");
-
-    var TotalChartPriceService =
-    /*#__PURE__*/
-    function () {
-      function TotalChartPriceService(httpClient) {
-        _classCallCheck(this, TotalChartPriceService);
-
-        this.httpClient = httpClient;
-      }
-
-      _createClass(TotalChartPriceService, [{
-        key: "postCheckout",
-        value: function postCheckout(requestData) {
-          // return this.httpClient.post("/api/submit", checkout);
-          return this.httpClient.post("/api/submit", requestData);
-        }
-      }]);
-
-      return TotalChartPriceService;
-    }();
-
-    TotalChartPriceService.ctorParameters = function () {
-      return [{
-        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
-      }];
-    };
-
-    TotalChartPriceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-      providedIn: 'root'
-    })], TotalChartPriceService);
-    /***/
-  },
-
-  /***/
-  "./src/app/data/checkout-data.service.ts":
-  /*!***********************************************!*\
-    !*** ./src/app/data/checkout-data.service.ts ***!
-    \***********************************************/
-
-  /*! exports provided: CheckoutDataService */
-
-  /***/
-  function srcAppDataCheckoutDataServiceTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "CheckoutDataService", function () {
-      return CheckoutDataService;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! rxjs */
-    "./node_modules/rxjs/_esm2015/index.js");
-
-    var CheckoutDataService =
-    /*#__PURE__*/
-    function () {
-      function CheckoutDataService() {
-        _classCallCheck(this, CheckoutDataService);
-
-        this.checkout = null; //  checkout: Checkout = {
-        //    packages: [{
-        //      id: 1,
-        //      name: "paket",
-        //      price: 0
-        //    }]
-        //  };
-
-        this.messageSource = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](this.checkout);
-        this.currentMessage = this.messageSource.asObservable();
-      }
-
-      _createClass(CheckoutDataService, [{
-        key: "changeMessage",
-        value: function changeMessage(checkout) {
-          this.messageSource.next(checkout);
-          localStorage.setItem('checkout', JSON.stringify(checkout));
-        }
-      }, {
-        key: "newMessage",
-        value: function newMessage() {
-          this.changeMessage(this.checkout);
-          return this.checkout;
-        }
-      }]);
-
-      return CheckoutDataService;
-    }();
-
-    CheckoutDataService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()], CheckoutDataService);
     /***/
   },
 
@@ -1709,9 +1562,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var src_app_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! src/app/data/checkout-data.service */
-    "./src/app/data/checkout-data.service.ts");
+    var src_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/services/checkout-data.service */
+    "./src/app/services/checkout-data.service.ts");
 
     var CheckoutPageComponent =
     /*#__PURE__*/
@@ -1739,7 +1592,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     CheckoutPageComponent.ctorParameters = function () {
       return [{
-        type: src_app_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__["CheckoutDataService"]
+        type: src_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__["CheckoutDataService"]
       }];
     };
 
@@ -1809,9 +1662,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var src_app_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! src/app/data/checkout-data.service */
-    "./src/app/data/checkout-data.service.ts");
+    var src_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/services/checkout-data.service */
+    "./src/app/services/checkout-data.service.ts");
 
     var NavbarComponent =
     /*#__PURE__*/
@@ -1843,7 +1696,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     NavbarComponent.ctorParameters = function () {
       return [{
-        type: src_app_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__["CheckoutDataService"]
+        type: src_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_2__["CheckoutDataService"]
       }];
     };
 
@@ -1913,15 +1766,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _package_page_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ./package-page.service */
-    "./src/app/pages/package-page/package-page.service.ts");
+    var src_app_services_package_page_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/services/package-page.service */
+    "./src/app/services/package-page.service.ts");
     /* harmony import */
 
 
-    var src_app_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! src/app/data/checkout-data.service */
-    "./src/app/data/checkout-data.service.ts");
+    var src_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/services/checkout-data.service */
+    "./src/app/services/checkout-data.service.ts");
 
     var PackagePageComponent =
     /*#__PURE__*/
@@ -1971,8 +1824,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
             for (var i = 0; i < _this9.yedekPaket.length; i++) {
               _this9.yedekPaket[i]["img"] = _this9.randomImgUrl(_this9.yedekPaket[i].name);
-            } // paket sayisinin 3ün kati olmadığı durumlarda (ornegin 8) 
-            // 3 3 2 product gorunecektir. daha efektif bir goruntu sağlamak adina 
+            } // product sayisinin 3ün kati olmadığı durumlarda (ornegin 8) 
+            // genis ekranda 3 3 2 product gorunecektir. daha efektif bir goruntu sağlamak adina 
             // card sayisi 3 e tamamlandi.fazladan eklenen product rastgele secildi.
 
 
@@ -2024,16 +1877,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function randomImgUrl(a) {
           var ImgList = [{
             name: "platinum",
-            link: ["https://s2.turkcell.com.tr/SiteAssets/Video/render/platinum-black.PNG", "https://s2.turkcell.com.tr/SiteAssets/Video/render/platinum-black.PNG"]
+            link: ["https://foto.haberler.com/haber/2017/05/27/turkcell-platinum-musterilerine-ozel-firsatlar-9664732_6690_amp.jpg", "https://foto.haberler.com/haber/2017/05/27/turkcell-platinum-musterilerine-ozel-firsatlar-9664732_6690_amp.jpg"]
           }, {
             name: "bip",
-            link: ["https://s2.turkcell.com.tr/SiteAssets/Video/render/bip.PNG", "https://i1.wp.com/teknoyo.com/wp-content/uploads/2015/05/turkcell-bip-ozellikleri.png?fit=2048%2C1024"]
+            link: ["https://www.technopat.net/wp-content/uploads/2019/06/turkcell.jpg", "https://www.technopat.net/wp-content/uploads/2019/06/turkcell.jpg"]
           }, {
             name: "tv+",
             link: ["https://cdn.iha.com.tr/Contents/images/2017/35/2156641.jpg", "https://eventoftech.com/wp-content/uploads/2020/01/tv-plus.jpg"]
           }, {
             name: "fizy",
             link: ["https://i.ytimg.com/vi/IlPg5-8mOLI/maxresdefault.jpg", "https://i2.milimaj.com/i/milliyet/75/0x410/5ca1cef545d2a029641d2d24.jpg"]
+          }, {
+            name: "dergilik",
+            link: ["https://s2.turkcell.com.tr/SiteAssets/Bireysel/Kampanya/render/gorseller/Dergilik-1GB-Kampanya-Gorseli.jpg", "https://www.mobil13.com/wp-content/uploads/2019/07/Turkcell-Dergilik.jpg"]
+          }, {
+            name: "lifebox",
+            link: ["https://www.teknotalk.com/wp-content/uploads/2016/11/lifebox.jpg", "https://www.teknotalk.com/wp-content/uploads/2016/11/lifebox.jpg"]
+          }, {
+            name: "gollercepte",
+            link: ["https://turk-internet.com/wp-content/uploads/2019/05/goller-cepte-turkcell-ticom.jpg", "https://turk-internet.com/wp-content/uploads/2019/05/goller-cepte-turkcell-ticom.jpg"]
           }];
           var num = Math.floor(Math.random() * 2);
 
@@ -2050,9 +1912,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     PackagePageComponent.ctorParameters = function () {
       return [{
-        type: _package_page_service__WEBPACK_IMPORTED_MODULE_2__["PackagePageService"]
+        type: src_app_services_package_page_service__WEBPACK_IMPORTED_MODULE_2__["PackagePageService"]
       }, {
-        type: src_app_data_checkout_data_service__WEBPACK_IMPORTED_MODULE_3__["CheckoutDataService"]
+        type: src_app_services_checkout_data_service__WEBPACK_IMPORTED_MODULE_3__["CheckoutDataService"]
       }];
     };
 
@@ -2065,77 +1927,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./package-page.component.css */
       "./src/app/pages/package-page/package-page.component.css")).default]
     })], PackagePageComponent);
-    /***/
-  },
-
-  /***/
-  "./src/app/pages/package-page/package-page.service.ts":
-  /*!************************************************************!*\
-    !*** ./src/app/pages/package-page/package-page.service.ts ***!
-    \************************************************************/
-
-  /*! exports provided: PackagePageService */
-
-  /***/
-  function srcAppPagesPackagePagePackagePageServiceTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "PackagePageService", function () {
-      return PackagePageService;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/common/http */
-    "./node_modules/@angular/common/fesm2015/http.js");
-
-    var PackagePageService =
-    /*#__PURE__*/
-    function () {
-      function PackagePageService(httpClient) {
-        _classCallCheck(this, PackagePageService);
-
-        this.httpClient = httpClient;
-      }
-
-      _createClass(PackagePageService, [{
-        key: "getProduct",
-        value: function getProduct(phoneNumber) {
-          return this.httpClient.post("/api/inquiryPackages?msisdn=" + phoneNumber, {
-            title: 'Angular POST Request Example'
-          }); //return this.httpClient.get<Product>("http://www.mocky.io/v2/5e4534b33000005d3561499a");
-        }
-      }]);
-
-      return PackagePageService;
-    }();
-
-    PackagePageService.ctorParameters = function () {
-      return [{
-        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
-      }];
-    };
-
-    PackagePageService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-      providedIn: 'root'
-    })], PackagePageService);
     /***/
   },
 
@@ -2303,6 +2094,224 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./user-page.component.css */
       "./src/app/pages/user-page/user-page.component.css")).default]
     })], UserPageComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/services/checkout-data.service.ts":
+  /*!***************************************************!*\
+    !*** ./src/app/services/checkout-data.service.ts ***!
+    \***************************************************/
+
+  /*! exports provided: CheckoutDataService */
+
+  /***/
+  function srcAppServicesCheckoutDataServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "CheckoutDataService", function () {
+      return CheckoutDataService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+
+    var CheckoutDataService =
+    /*#__PURE__*/
+    function () {
+      function CheckoutDataService() {
+        _classCallCheck(this, CheckoutDataService);
+
+        this.checkout = null; //  checkout: Checkout = {
+        //    packages: [{
+        //      id: 1,
+        //      name: "paket",
+        //      price: 0
+        //    }]
+        //  };
+
+        this.messageSource = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](this.checkout);
+        this.currentMessage = this.messageSource.asObservable();
+      }
+
+      _createClass(CheckoutDataService, [{
+        key: "changeMessage",
+        value: function changeMessage(checkout) {
+          this.messageSource.next(checkout);
+          localStorage.setItem('checkout', JSON.stringify(checkout));
+        }
+      }, {
+        key: "newMessage",
+        value: function newMessage() {
+          this.changeMessage(this.checkout);
+          return this.checkout;
+        }
+      }]);
+
+      return CheckoutDataService;
+    }();
+
+    CheckoutDataService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()], CheckoutDataService);
+    /***/
+  },
+
+  /***/
+  "./src/app/services/package-page.service.ts":
+  /*!**************************************************!*\
+    !*** ./src/app/services/package-page.service.ts ***!
+    \**************************************************/
+
+  /*! exports provided: PackagePageService */
+
+  /***/
+  function srcAppServicesPackagePageServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PackagePageService", function () {
+      return PackagePageService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+
+    var PackagePageService =
+    /*#__PURE__*/
+    function () {
+      function PackagePageService(httpClient) {
+        _classCallCheck(this, PackagePageService);
+
+        this.httpClient = httpClient;
+      }
+
+      _createClass(PackagePageService, [{
+        key: "getProduct",
+        value: function getProduct(phoneNumber) {
+          return this.httpClient.post("/api/inquiryPackages?msisdn=" + phoneNumber, {
+            title: 'Angular POST Request Example'
+          }); //return this.httpClient.get<Product>("http://www.mocky.io/v2/5e4534b33000005d3561499a");
+        }
+      }]);
+
+      return PackagePageService;
+    }();
+
+    PackagePageService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    PackagePageService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], PackagePageService);
+    /***/
+  },
+
+  /***/
+  "./src/app/services/total-chart-price.service.ts":
+  /*!*******************************************************!*\
+    !*** ./src/app/services/total-chart-price.service.ts ***!
+    \*******************************************************/
+
+  /*! exports provided: TotalChartPriceService */
+
+  /***/
+  function srcAppServicesTotalChartPriceServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TotalChartPriceService", function () {
+      return TotalChartPriceService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+
+    var TotalChartPriceService =
+    /*#__PURE__*/
+    function () {
+      function TotalChartPriceService(httpClient) {
+        _classCallCheck(this, TotalChartPriceService);
+
+        this.httpClient = httpClient;
+      }
+
+      _createClass(TotalChartPriceService, [{
+        key: "postCheckout",
+        value: function postCheckout(requestData) {
+          // return this.httpClient.post("/api/submit", checkout);
+          return this.httpClient.post("/api/submit", requestData);
+        }
+      }]);
+
+      return TotalChartPriceService;
+    }();
+
+    TotalChartPriceService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }];
+    };
+
+    TotalChartPriceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], TotalChartPriceService);
     /***/
   },
 
