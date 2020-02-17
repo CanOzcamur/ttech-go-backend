@@ -22,7 +22,7 @@ How to compile project: **mvn package**
 
 Go to: **/target**
 
-How to run project: **java -jar ttech-go*.jar**
+How to run project: **java -jar ttech-go\*.jar**
 
 Reach the pages: **http://localhost:8080**
 
