@@ -20,11 +20,15 @@ It uses a custom API for all requests.
 
 How to compile project: **mvn package**
 
-How to run project: **java -jar ttech-go.jar**
+Go to: **/target**
+
+How to run project: **java -jar ttech-go*.jar**
 
 Reach the pages: **http://localhost:8080**
 
 **The general page breakdown looks like this:**
+
+Further Api Read: **api-services.docx**
 
 - Home page (URL: /user )
     - Search of user 
