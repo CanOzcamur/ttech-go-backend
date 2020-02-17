@@ -30,6 +30,12 @@ Reach the pages: **http://localhost:8080**
 
 Further Api Read: **api-services.docx**
 
+Further Unit Test Run Configuration Read: **Unit Test Run Configuration.docx **
+
+Further Technical Document Read: **TTech-Go TTD.docx**
+
+Detailed video: **video.mov** 
+
 - Home page (URL: /user )
     - Search of user 
 - Display package (URL: /package )
